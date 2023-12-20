@@ -35,11 +35,19 @@ def secret_santa(participants):
         j = (i + 1) % len(participants)
         secret_santa_pairs[participants[i]] = participants[j]
 
-    # Print the Secret Santa pairs
-    for participant, santa in secret_santa_pairs.items():
-        print(f"{participant} is the Secret Santa for {santa}")
-        input("Press Enter to continue...")
+    # Print the Secret Santa pairs starting from the first participant
+    for participant in participants:
+        # Clear the screen before displaying each participant's match
         clear_screen()
+
+        # Print instructions for the participant
+        print(f"{participant}, please press Enter when you are ready.")
+        input("Press Enter to continue...")
+
+        # Display the Secret Santa match for the participant
+        santa = secret_santa_pairs[participant]
+        clear_screen()
+        print(f"{participant}, you were matched with {santa}")
 
 # Get participants from user input
 participants_list = get_participants()
