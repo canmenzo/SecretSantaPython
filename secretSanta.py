@@ -7,11 +7,11 @@ def clear_screen():
 def get_participants():
     while True:
         try:
-            num_participants = int(input("Enter the number of participants (even number): "))
-            if num_participants % 2 == 0 and num_participants >= 2:
+            num_participants = int(input("Enter the number of participants: "))
+            if num_participants >= 2:
                 break
             else:
-                print("Error: Please enter an even number greater than or equal to 2.")
+                print("Error: Please enter a number greater than or equal to 2.")
         except ValueError:
             print("Error: Please enter a valid number.")
 
@@ -48,6 +48,10 @@ def secret_santa(participants):
         santa = secret_santa_pairs[participant]
         clear_screen()
         print(f"{participant}, you were matched with {santa}")
+        input("Press Enter to hide your match and pass it on...")
+
+    clear_screen()
+    print("Everyone has seen their match. Merry Christmas!")
 
 # Get participants from user input
 participants_list = get_participants()

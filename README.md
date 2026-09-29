@@ -14,9 +14,9 @@ A small terminal script that randomly matches Secret Santa participants and reve
 ```bash
 python3 secretSanta.py
 ```
-1. Enter the number of participants (must be an even number, 2 or more).
+1. Enter the number of participants (2 or more).
 2. Enter each participant's name.
-3. Pass the keyboard around: each person presses Enter to see who they got.
+3. Pass the keyboard around: each person presses Enter to see who they got, then Enter again to hide it before handing it on.
 
 ### 📄 License
 MIT
