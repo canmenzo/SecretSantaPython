@@ -1,10 +1,22 @@
-# SecretSantaPython
-Simple python script that allows you to randomly match participants. Merry Christmas!
+# 🎅 SecretSantaPython
 
-Instructions to use:
+[![license](https://img.shields.io/github/license/canmenzo/SecretSantaPython)](LICENSE)
+![python](https://img.shields.io/badge/python-3.6+-blue?logo=python&logoColor=white)
 
-1- Enter the amount of participants in the Secret Santa.
+A small terminal script that randomly matches Secret Santa participants and reveals each match one person at a time. Merry Christmas!
 
-2- Enter each participant's names.
+### ✨ Features
+- 🎲 Shuffles participants into one gift-giving circle, so nobody draws themselves
+- 🙈 Reveals matches one by one, clearing the screen between people
+- ✅ Standard library only, no dependencies
 
-3- Press enter when you are ready!
+### 🚀 Quick start
+```bash
+python3 secretSanta.py
+```
+1. Enter the number of participants (must be an even number, 2 or more).
+2. Enter each participant's name.
+3. Pass the keyboard around: each person presses Enter to see who they got.
+
+### 📄 License
+MIT
